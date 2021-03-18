@@ -1,0 +1,126 @@
+
+----------
+# MISC
+
+/docs/*.go
+/docs/swagger.yaml
+/docs/swagger.json
+
+/spec/*.go
+/spec/*.yaml
+/spec/*.json
+
+/fn/config.json
+/lambda/config.json
+/src/localcover.com/**/config.json
+
+out
+
+tmp*
+.tmp*
+*.tmp.*
+
+*.postman_environment.json
+----------
+
+----------
+# Golang
+
+/bin
+/pkg
+/go
+/go-tools
+/src/gopkg.in
+/_vendor*
+----------
+
+----------
+# Serverless/Node/JS
+
+.serverless
+node_modules
+jspm_packages
+coverage
+npm-debug.log
+yarn-error.log
+yarn.lock
+----------
+
+----------
+VSCode
+
+.vscode
+----------
+
+----------
+JetBrains
+
+.idea
+
+cmake-build-debug/
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+----------
+
+----------
+# Apple Mac
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+----------
+
+----------
+# Temporary Files
+
+.lock
+----------
+
+----------
+# Python
+
+__pycache__
+----------
