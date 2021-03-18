@@ -1,4 +1,4 @@
-module migratex
+module github.com/localcover/public-migratex
 
 go 1.16
 
