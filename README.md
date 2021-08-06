@@ -27,6 +27,22 @@ JSON token definition files are optional but there can only be one per DML file:
 Note that there can only be one DML file for a revision for each environment.
 Note that DML migration revision history is maintained in the table `DataMigrations`.
 
+## Usage
+
+```shell
+gcloud config configurations activate [CONFIGURATION_NAME]
+
+gcloud spanner databases create [SPANNER_DATABASE_ID] --instance=[SPANNER_INSTANCE_ID]
+
+# DDL only using 'migrate'
+migrate -path . -database spanner://projects/[GCP_PROJECT_ID]/instances/[SPANNER_INSTANCE_ID]/databases/[SPANNER_DATABASE_ID] up
+
+go get -u github.com/localcover/public-migratex
+
+# DDL and DML using 'migratex'
+migratex -env_id=[ENV_ID] -gcp_project_id=[GCP_PROJECT_ID] -spanner_instance_id=[SPANNER_INSTANCE_ID] -spanner_database_id=[SPANNER_DATABASE_ID]
+```
+
 ## Contributors
 
 Contributors in alphabetical order are Leonie Farmer, Jordan Felix, Billy Fung, Cai Gwatkin, Xiaona Jia, Rick Lee, Ling Liang, Parker Lin, Bruno Monteiro, Tom Wang, Steven Zhang, Yixin Zhang et al.
